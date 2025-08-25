@@ -1,4 +1,4 @@
-package com.myname.mymodid;
+package com.hehcrashes.gtmorehard;
 
 public class ClientProxy extends CommonProxy {
 
