@@ -3,6 +3,7 @@ package com.hehcrashes.gtmorehard.common.material;
 import bartworks.system.material.Werkstoff;
 import gregtech.api.enums.OrePrefixes;
 import gregtech.api.enums.TextureSet;
+import gregtech.api.util.GTRecipe;
 
 import static bartworks.util.BWUtil.subscriptNumbers;
 
