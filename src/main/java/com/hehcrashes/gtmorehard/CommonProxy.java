@@ -1,5 +1,7 @@
 package com.hehcrashes.gtmorehard;
 
+import com.hehcrashes.gtmorehard.loader.MachineLoader;
+import com.hehcrashes.gtmorehard.loader.MaterialLoader;
 import com.hehcrashes.gtmorehard.loader.RecipeLoader;
 import cpw.mods.fml.common.event.*;
 
@@ -9,14 +11,17 @@ public class CommonProxy {
     // GameRegistry." (Remove if not needed)
     public void preInit(FMLPreInitializationEvent event) {
         Config.synchronizeConfiguration(event.getSuggestedConfigurationFile());
-
+        MaterialLoader.load();
     }
 
     // load "Do your mod setup. Build whatever data structures you care about. Register recipes." (Remove if not needed)
-    public void init(FMLInitializationEvent event) {}
+    public void init(FMLInitializationEvent event) {
+        MachineLoader.loadMachines();
+    }
 
     // postInit "Handle interaction with other mods, complete your setup based on this." (Remove if not needed)
     public void postInit(FMLPostInitializationEvent event) {
+        MachineLoader.loadMachinePostInit();
         RecipeLoader.loadRecipesPostInit();
     }
 

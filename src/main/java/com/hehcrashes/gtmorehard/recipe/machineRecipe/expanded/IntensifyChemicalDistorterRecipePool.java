@@ -12,8 +12,9 @@ import gregtech.api.enums.GTValues;
 import gregtech.api.enums.Materials;
 import gregtech.api.recipe.RecipeMap;
 import gregtech.api.util.GTUtility;
+import net.minecraft.entity.ai.attributes.AttributeModifier;
 
-public class IntensifyChemicalDistorterRecipePool {
+public class IntensifyChemicalDistorterRecipePool{
 
     private static final RecipeMap<?> ICD = GTCMRecipe.IntensifyChemicalDistorterRecipes;
 

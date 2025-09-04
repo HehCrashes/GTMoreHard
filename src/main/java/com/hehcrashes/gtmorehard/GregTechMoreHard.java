@@ -1,5 +1,6 @@
 package com.hehcrashes.gtmorehard;
 
+import com.hehcrashes.gtmorehard.loader.MachineLoader;
 import com.hehcrashes.gtmorehard.loader.MaterialLoader;
 import cpw.mods.fml.common.event.*;
 import org.apache.logging.log4j.LogManager;
@@ -16,6 +17,8 @@ import cpw.mods.fml.common.SidedProxy;
 public class GregTechMoreHard {
 
     public static final String MODID = "gtmorehard";
+
+    public static final String MODNAME = "GregTech More Hard";
     public static final Logger LOG = LogManager.getLogger(MODID);
     public static final String RESOURCE_ROOT_ID = "gtmorehard";
 
@@ -37,7 +40,6 @@ public class GregTechMoreHard {
     // GameRegistry." (Remove if not needed)
     public void preInit(FMLPreInitializationEvent event) {
         proxy.preInit(event);
-        MaterialLoader.load();
     }
 
     @Mod.EventHandler

@@ -12,7 +12,9 @@ public enum GTCMItemList {
 
     // region Items
     TestItem0,
-    TestMetaBlock01_0;
+    TestMetaBlock01_0,
+
+    IntensifyChemicalDistorter;
 
     // region Member Variables
 

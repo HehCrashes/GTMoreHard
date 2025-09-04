@@ -18,7 +18,7 @@ public class GTCMRecipe {
         .progressBar(GTUITextures.PROGRESSBAR_ARROW_MULTIPLE)
         .frontend(TST_GeneralFrontend::new)
         .neiHandlerInfo(
-            builder -> builder.setDisplayStack(GTCMItemList.TestMetaBlock01_0.get(0))
+            builder -> builder.setDisplayStack(GTCMItemList.IntensifyChemicalDistorter.get(1))
                 .setMaxRecipesPerPage(1))
         //.disableOptimize()
         .build();
